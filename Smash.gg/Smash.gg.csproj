@@ -54,6 +54,7 @@
     <Compile Include="Mutations.cs" />
     <Compile Include="Participants.cs" />
     <Compile Include="Phase.cs" />
+    <Compile Include="PhaseGroup.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="PlayerIds.cs" />
     <Compile Include="Prefixes.cs" />
