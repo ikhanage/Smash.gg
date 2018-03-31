@@ -3,9 +3,9 @@ using Newtonsoft.Json;
 
 namespace Smash.gg
 {
-    public class PhaseGroup
+    public class EventGroup
     {
-        [JsonProperty("entities")] public PhaseGroupEntities Entities { get; set; }
+        [JsonProperty("entities")] public EventEntities Entities { get; set; }
         [JsonProperty("result")] public int Result { get; set; }
         [JsonProperty("resultEntity")] public string ResultEntity { get; set; }
         [JsonProperty("actionRecords")] public List<object> ActionRecords { get; set; }

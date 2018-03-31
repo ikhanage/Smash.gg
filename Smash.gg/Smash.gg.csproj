@@ -48,6 +48,8 @@
     <Compile Include="Entities.cs" />
     <Compile Include="Entrant.cs" />
     <Compile Include="Event.cs" />
+    <Compile Include="EventEntities.cs" />
+    <Compile Include="EventGroup.cs" />
     <Compile Include="Groups.cs" />
     <Compile Include="Image.cs" />
     <Compile Include="Links.cs" />
@@ -55,6 +57,7 @@
     <Compile Include="Participants.cs" />
     <Compile Include="Phase.cs" />
     <Compile Include="PhaseGroup.cs" />
+    <Compile Include="PhaseGroupEntities.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="PlayerIds.cs" />
     <Compile Include="Prefixes.cs" />
@@ -64,6 +67,7 @@
     <Compile Include="RankingIteration.cs" />
     <Compile Include="RankingSeries.cs" />
     <Compile Include="Set.cs" />
+    <Compile Include="Standing.cs" />
     <Compile Include="Stats.cs" />
     <Compile Include="TieBreakOrder.cs" />
     <Compile Include="Tournament.cs" />
