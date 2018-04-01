@@ -71,6 +71,8 @@
     <Compile Include="Stats.cs" />
     <Compile Include="TieBreakOrder.cs" />
     <Compile Include="Tournament.cs" />
+    <Compile Include="TournamentEntities.cs" />
+    <Compile Include="TournamentGroup.cs" />
     <Compile Include="Videogame.cs" />
   </ItemGroup>
   <ItemGroup>

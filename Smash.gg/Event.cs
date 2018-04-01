@@ -35,7 +35,7 @@ namespace Smash.gg
         [JsonProperty("entrantMode")]  public int EntrantMode { get; set; }
         [JsonProperty("private")]  public bool Private { get; set; }
         [JsonProperty("isOnline")]  public bool IsOnline { get; set; }
-        [JsonProperty("isOnline")]  public bool HasTasks { get; set; }
+        [JsonProperty("hasTaskss")]  public bool HasTasks { get; set; }
         [JsonProperty("hasDecks")]  public bool HasDecks { get; set; }
         [JsonProperty("enableSlippi")]  public bool EnableSlippi { get; set; }
         [JsonProperty("hasMatchmaking")]  public bool HasMatchmaking { get; set; }
