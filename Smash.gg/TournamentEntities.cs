@@ -7,7 +7,7 @@ namespace Smash.gg
     {
         [JsonProperty("tournament")] public Tournament Tournament { get; set; }
         [JsonProperty("phase")] public List<Phase> Phase { get; set; }
-        [JsonProperty("groups")] public List<Groups> Groups { get; set; }
+        [JsonProperty("groups")] public List<GroupTournament> Groups { get; set; }
         [JsonProperty("event")] public List<Event> Event { get; set; }
         [JsonProperty("videogame")] public List<Videogame> Videogame { get; set; }
     }

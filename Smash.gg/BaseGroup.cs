@@ -2,7 +2,8 @@
 using Newtonsoft.Json;
 
 namespace Smash.gg
-{public class Groups
+{
+    public class BaseGroup
     {
         [JsonProperty("id")] public int Id { get; set; }
         [JsonProperty("phaseId")] public int PhaseId { get; set; }
@@ -39,7 +40,6 @@ namespace Smash.gg
         [JsonProperty("pointsPerBye")] public int? PointsPerBye { get; set; }
         [JsonProperty("matchmakingEnabled")] public bool MatchmakingEnabled { get; set; }
         [JsonProperty("scheduleId")] public int? ScheduleId { get; set; }
-        [JsonProperty("expand")] public Dictionary<string, string> Expand { get; set; }
         [JsonProperty("hasSets")] public bool HasSets { get; set; }
         [JsonProperty("hasCustomWinnerByes")] public bool HasCustomWinnerByes { get; set; }
         [JsonProperty("percentageComplete")] public string PercentageComplete { get; set; }

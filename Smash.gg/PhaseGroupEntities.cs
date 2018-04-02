@@ -5,7 +5,7 @@ namespace Smash.gg
 {
     public class PhaseGroupEntities
     {
-        [JsonProperty("groups")] public Groups Groups { get; set; }
+        [JsonProperty("groups")] public Group BaseGroup { get; set; }
         [JsonProperty("entrants")] public List<Entrant> Entrants { get; set; }
         [JsonProperty("player")] public List<Player> Player { get; set; }
         [JsonProperty("rankingSeries")] public List<RankingSeries> RankingSeries { get; set; }

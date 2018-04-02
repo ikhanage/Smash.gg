@@ -50,7 +50,9 @@
     <Compile Include="Event.cs" />
     <Compile Include="EventEntities.cs" />
     <Compile Include="EventGroup.cs" />
-    <Compile Include="Groups.cs" />
+    <Compile Include="BaseGroup.cs" />
+    <Compile Include="Group.cs" />
+    <Compile Include="GroupTournament.cs" />
     <Compile Include="Image.cs" />
     <Compile Include="Links.cs" />
     <Compile Include="Mutations.cs" />
