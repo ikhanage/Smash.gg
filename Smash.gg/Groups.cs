@@ -19,7 +19,7 @@ namespace Smash.gg
         [JsonProperty("setsOnDeck")] public int SetsOnDeck { get; set; }
         [JsonProperty("rematchSeconds")] public int RematchSeconds { get; set; }
         [JsonProperty("finalized")] public bool Finalized { get; set; }
-        [JsonProperty("winnersTargetPhaseId")] public int WinnersTargetPhaseId { get; set; }
+        [JsonProperty("winnersTargetPhaseId")] public int? WinnersTargetPhaseId { get; set; }
         [JsonProperty("numProgressing")] public int NumProgressing { get; set; }
         [JsonProperty("losersTargetPhaseId")] public object LosersTargetPhaseId { get; set; }
         [JsonProperty("startAt")] public object StartAt { get; set; }
@@ -34,11 +34,11 @@ namespace Smash.gg
         [JsonProperty("runOnce")] public bool RunOnce { get; set; }
         [JsonProperty("callMatches")] public bool CallMatches { get; set; }
         [JsonProperty("applyAll")] public bool ApplyAll { get; set; }
-        [JsonProperty("pointsPerMatchWin")] public object PointsPerMatchWin { get; set; }
-        [JsonProperty("pointsPerGameWin")] public object PointsPerGameWin { get; set; }
-        [JsonProperty("pointsPerBye")] public object PointsPerBye { get; set; }
+        [JsonProperty("pointsPerMatchWin")] public int? PointsPerMatchWin { get; set; }
+        [JsonProperty("pointsPerGameWin")] public int? PointsPerGameWin { get; set; }
+        [JsonProperty("pointsPerBye")] public int? PointsPerBye { get; set; }
         [JsonProperty("matchmakingEnabled")] public bool MatchmakingEnabled { get; set; }
-        [JsonProperty("scheduleId")] public int ScheduleId { get; set; }
+        [JsonProperty("scheduleId")] public int? ScheduleId { get; set; }
         [JsonProperty("expand")] public Dictionary<string, string> Expand { get; set; }
         [JsonProperty("hasSets")] public bool HasSets { get; set; }
         [JsonProperty("hasCustomWinnerByes")] public bool HasCustomWinnerByes { get; set; }

@@ -11,7 +11,7 @@ namespace Smash.gg
         [JsonProperty("phaseOrder")] public int PhaseOrder { get; set; }
         [JsonProperty("name")] public string Name { get; set; }
         [JsonProperty("state")] public int State { get; set; }
-        [JsonProperty("pendingSeeds")] public object PendingSeeds { get; set; }
+        [JsonProperty("pendingSeeds")] public int? PendingSeeds { get; set; }
         [JsonProperty("locked")] public bool Locked { get; set; }
         [JsonProperty("isDefault")] public bool IsDefault { get; set; }
         [JsonProperty("isExhibition")] public bool IsExhibition { get; set; }
