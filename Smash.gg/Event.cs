@@ -30,8 +30,8 @@ namespace Smash.gg
         [JsonProperty("platformIds")]  public List<string> PlatformIds { get; set; }
         [JsonProperty("version")]  public object Version { get; set; }
         [JsonProperty("type")]  public int Type { get; set; }
-        [JsonProperty("formatType")]  public int FormatType { get; set; }
-        [JsonProperty("teamsFormat")]  public int TeamsFormat { get; set; }
+        [JsonProperty("formatType")]  public int? FormatType { get; set; }
+        [JsonProperty("teamsFormat")]  public int? TeamsFormat { get; set; }
         [JsonProperty("entrantMode")]  public int EntrantMode { get; set; }
         [JsonProperty("private")]  public bool Private { get; set; }
         [JsonProperty("isOnline")]  public bool IsOnline { get; set; }

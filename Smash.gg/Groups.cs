@@ -39,7 +39,7 @@ namespace Smash.gg
         [JsonProperty("pointsPerBye")] public int? PointsPerBye { get; set; }
         [JsonProperty("matchmakingEnabled")] public bool MatchmakingEnabled { get; set; }
         [JsonProperty("scheduleId")] public int? ScheduleId { get; set; }
-        [JsonProperty("expand")] public Dictionary<string, string> Expand { get; set; }
+        [JsonProperty("expand")] public List<string> Expand { get; set; }
         [JsonProperty("hasSets")] public bool HasSets { get; set; }
         [JsonProperty("hasCustomWinnerByes")] public bool HasCustomWinnerByes { get; set; }
         [JsonProperty("percentageComplete")] public string PercentageComplete { get; set; }
