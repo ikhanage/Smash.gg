@@ -21,7 +21,7 @@ namespace Smash.gg
         [JsonProperty("url")] public object Url { get; set; }
         [JsonProperty("createdAt")] public int CreatedAt { get; set; }
         [JsonProperty("updatedAt")] public int UpdatedAt { get; set; }
-        [JsonProperty("createdBy")] public int CreatedBy { get; set; }
+        [JsonProperty("createdBy")] public int? CreatedBy { get; set; }
         [JsonProperty("images")] public List<object> Images { get; set; }
         [JsonProperty("expand")] public List<object> Expand { get; set; }
         [JsonProperty("permissionType")] public string PermissionType { get; set; }

@@ -18,7 +18,7 @@ namespace Smash.gg
         [JsonProperty("endAt")] public int? EndAt { get; set; }
         [JsonProperty("createdAt")] public int CreatedAt { get; set; }
         [JsonProperty("updatedAt")] public int UpdatedAt { get; set; }
-        [JsonProperty("submittedAt")] public int SubmittedAt { get; set; }
+        [JsonProperty("submittedAt")] public int? SubmittedAt { get; set; }
         [JsonProperty("createdBy")] public int CreatedBy { get; set; }
         [JsonProperty("images")] public List<Image> Images { get; set; }
         [JsonProperty("permissionType")] public string PermissionType { get; set; }
