@@ -14,7 +14,7 @@ namespace Smash.gg
         [JsonProperty("locationName")] public object LocationName { get; set; }
         [JsonProperty("locationRadius")] public object LocationRadius { get; set; }
         [JsonProperty("radiusUnit")] public string RadiusUnit { get; set; }
-        [JsonProperty("locationId")] public int LocationId { get; set; }
+        [JsonProperty("locationId")] public int? LocationId { get; set; }
         [JsonProperty("name")] public string Name { get; set; }
         [JsonProperty("slug")] public string Slug { get; set; }
         [JsonProperty("description")] public object Description { get; set; }

@@ -21,6 +21,8 @@ namespace Smash.ggTests
             _data.Deserialize<PhaseGroup>("https://api.smash.gg/phase_group/515605?expand[]=sets&expand[]=entrants");
             _data.Deserialize<PhaseGroup>("https://api.smash.gg/phase_group/515606?expand[]=sets&expand[]=entrants");
             _data.Deserialize<PhaseGroup>("https://api.smash.gg/phase_group/533045?expand[]=sets&expand[]=entrants");
+            _data.Deserialize<PhaseGroup>("https://api.smash.gg/phase_group/499364?expand[]=sets&expand[]=entrants");
+
         }
 
         [TestMethod]
