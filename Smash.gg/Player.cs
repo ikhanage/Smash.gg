@@ -17,7 +17,7 @@ namespace Smash.gg
         [JsonProperty("smashboardsUserId")] public object SmashboardsUserId { get; set; }
         [JsonProperty("ssbwikiLink")] public object SsbwikiLink { get; set; }
         [JsonProperty("playerType")] public string PlayerType { get; set; }
-        [JsonProperty("rank")] public int? Rank { get; set; }
+        [JsonProperty("rank")] public decimal? Rank { get; set; }
         [JsonProperty("color")] public string Color { get; set; }
         [JsonProperty("nameDisplay")] public string NameDisplay { get; set; }
         [JsonProperty("slug")] public object Slug { get; set; }

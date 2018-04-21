@@ -15,7 +15,7 @@ namespace Smash.gg
         [JsonProperty("defaultSkill")] public int DefaultSkill { get; set; }
         [JsonProperty("skill")] public int? Skill { get; set; }
         [JsonProperty("skillOrder")] public int SkillOrder { get; set; }
-        [JsonProperty("unverified")] public bool Unverified { get; set; }
+        [JsonProperty("unverified")] public bool? Unverified { get; set; }
         [JsonProperty("isPlaceholder")] public object IsPlaceholder { get; set; }
         [JsonProperty("expand")] public List<object> Expand { get; set; }
         [JsonProperty("playerIds")] public PlayerIds PlayerIds { get; set; }

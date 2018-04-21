@@ -30,7 +30,7 @@ namespace Smash.gg
         [JsonProperty("lEligiblePhaseId")]  public object LEligiblePhaseId { get; set; }
         [JsonProperty("wEligiblePhaseId")]  public object WEligiblePhaseId { get; set; }
         [JsonProperty("unreachable")]  public bool Unreachable { get; set; }
-        [JsonProperty("isTiebreak")]  public bool IsTiebreak { get; set; }
+        [JsonProperty("isTiebreak")]  public bool? IsTiebreak { get; set; }
         [JsonProperty("type")]  public int Type { get; set; }
         [JsonProperty("crewPlayerCount")]  public object CrewPlayerCount { get; set; }
         [JsonProperty("identifier")]  public string Identifier { get; set; }
@@ -61,7 +61,7 @@ namespace Smash.gg
         [JsonProperty("updatedAtMicro")]  public double UpdatedAtMicro { get; set; }
         [JsonProperty("startAt")]  public object StartAt { get; set; }
         [JsonProperty("startedAt")]  public object StartedAt { get; set; }
-        [JsonProperty("completedAt")]  public int? CompletedAt { get; set; }
+        [JsonProperty("completedAt")]  public long? CompletedAt { get; set; }
         [JsonProperty("adminViewedAt")]  public object AdminViewedAt { get; set; }
         [JsonProperty("adminMessagedAt")]  public object AdminMessagedAt { get; set; }
         [JsonProperty("slots")]  public List<object> Slots { get; set; }
