@@ -83,7 +83,7 @@ namespace Smash.gg
         [JsonProperty("paypalPayerId")] public object PaypalPayerId { get; set; }
         [JsonProperty("customEmailText")] public object CustomEmailText { get; set; }
         [JsonProperty("registrationOptions")] public List<object> RegistrationOptions { get; set; }
-        [JsonProperty("limitsByType")] public List<object> LimitsByType { get; set; }
+        [JsonProperty("limitsByType")] public object LimitsByType { get; set; }
         [JsonProperty("publishing")] public Publishing Publishing { get; set; }
         [JsonProperty("trackingPixels")] public List<object> TrackingPixels { get; set; }
         [JsonProperty("generatedTabs")] public object GeneratedTabs { get; set; }

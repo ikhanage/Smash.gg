@@ -45,6 +45,7 @@ namespace Smash.ggTests
         {
             _data.Deserialize<TournamentGroup>("https://api.smash.gg/tournament/koopas-keep-dojo?expand[]=event&expand[]=phase&expand[]=groups&expand[]=stations");
             _data.Deserialize<TournamentGroup>("https://api.smash.gg/tournament/koopas-keep-17?expand[]=event&expand[]=phase&expand[]=groups&expand[]=stations");
+            _data.Deserialize<TournamentGroup>("https://api.smash.gg/tournament/fair-game-1-2-icebreaker?expand[]=event&expand[]=phase&expand[]=groups&expand[]=stations");
         }
     }
 }
