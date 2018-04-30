@@ -11,7 +11,7 @@ namespace Smash.gg
         [JsonProperty("participant1Id")] public object Participant1Id { get; set; }
         [JsonProperty("participant2Id")] public object Participant2Id { get; set; }
         [JsonProperty("name")] public string Name { get; set; }
-        [JsonProperty("finalPlacement")] public int FinalPlacement { get; set; }
+        [JsonProperty("finalPlacement")] public int? FinalPlacement { get; set; }
         [JsonProperty("defaultSkill")] public int DefaultSkill { get; set; }
         [JsonProperty("skill")] public int? Skill { get; set; }
         [JsonProperty("skillOrder")] public int SkillOrder { get; set; }

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
+using Smash.gg.JsonConverters;
 
 namespace Smash.gg
 {
@@ -27,7 +28,7 @@ namespace Smash.gg
         [JsonProperty("startedAt")] public object StartedAt { get; set; }
         [JsonProperty("seeds")] public List<object> Seeds { get; set; }
         [JsonProperty("sets")] public List<object> Sets { get; set; }
-        [JsonProperty("rounds")] public List<object> Rounds { get; set; }
+        [JsonProperty("rounds")][JsonConverter(typeof(DictionaryOrEmptyArrayConverter<string, Round>))] public Dictionary<string,Round> Rounds { get; set; }
         [JsonProperty("numRounds")] public object NumRounds { get; set; }
         [JsonProperty("firstRoundTime")] public object FirstRoundTime { get; set; }
         [JsonProperty("canAutoAssign")] public bool CanAutoAssign { get; set; }

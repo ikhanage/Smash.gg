@@ -11,6 +11,8 @@
     <AssemblyName>Smash.gg</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -54,6 +56,7 @@
     <Compile Include="Group.cs" />
     <Compile Include="GroupTournament.cs" />
     <Compile Include="Image.cs" />
+    <Compile Include="JsonConverters\DictionaryOrEmptyArrayConverter.cs" />
     <Compile Include="Links.cs" />
     <Compile Include="Mutations.cs" />
     <Compile Include="Participants.cs" />
@@ -68,6 +71,7 @@
     <Compile Include="Ranking.cs" />
     <Compile Include="RankingIteration.cs" />
     <Compile Include="RankingSeries.cs" />
+    <Compile Include="Round.cs" />
     <Compile Include="Set.cs" />
     <Compile Include="Standing.cs" />
     <Compile Include="Stats.cs" />

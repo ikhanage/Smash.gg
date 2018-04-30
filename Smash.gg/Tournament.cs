@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
+using Smash.gg.JsonConverters;
 
 namespace Smash.gg
 {
@@ -46,7 +47,7 @@ namespace Smash.gg
         [JsonProperty("lng")] public double Longiude { get; set; }
         [JsonProperty("monitoringRequestedBy")] public object MonitoringRequestedBy { get; set; }
         [JsonProperty("submissionState")] public int SubmissionState { get; set; }
-        [JsonProperty("links")] public Links Links { get; set; }
+        [JsonProperty("links")][JsonConverter(typeof(DictionaryOrEmptyArrayConverter<string, string>))] public Dictionary<string, string> Links { get; set; }
         [JsonProperty("venueName")] public string VenueName { get; set; }
         [JsonProperty("venueAddress")] public string VenueAddress { get; set; }
         [JsonProperty("region")] public object Region { get; set; }
@@ -97,7 +98,8 @@ namespace Smash.gg
         [JsonProperty("eventIds")] public List<int> EventIds { get; set; }
         [JsonProperty("regionDisplayName")] public string RegionDisplayName { get; set; }
         [JsonProperty("onlineEvents")] public List<object> OnlineEvents { get; set; }
-        [JsonProperty("taskEvents")] public List<object> TaskEvents { get; set; }
+        [JsonProperty("hasTaskEvents")] public bool HasTaskEvents { get; set; }
+        [JsonProperty("taskEvents")][JsonConverter(typeof(DictionaryOrEmptyArrayConverter<string, bool>))]public Dictionary<string, bool> TaskEvents { get; set; }
         [JsonProperty("supportsPayPal")] public bool SupportsPayPal { get; set; }
         [JsonProperty("slugs")] public List<string> Slugs { get; set; }
         [JsonProperty("permissionType")] public string PermissionType { get; set; }
