@@ -89,7 +89,7 @@ namespace Smash.gg
         [JsonProperty("trackingPixels")] public List<object> TrackingPixels { get; set; }
         [JsonProperty("generatedTabs")] public object GeneratedTabs { get; set; }
         [JsonProperty("defaultTab")] public string DefaultTab { get; set; }
-        [JsonProperty("fees")] public List<object> Fees { get; set; }
+        [JsonProperty("fees")][JsonConverter(typeof(DictionaryOrEmptyArrayConverter<string, object>))]public Dictionary<string, object> Fees { get; set; }
         [JsonProperty("customMarkdown")] public List<object> CustomMarkdown { get; set; }
         [JsonProperty("images")] public List<Image> Images { get; set; }
         [JsonProperty("scheduleId")] public int ScheduleId { get; set; }
