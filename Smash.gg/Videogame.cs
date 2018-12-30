@@ -9,8 +9,8 @@ namespace Smash.gg
         [JsonProperty("abbrev")] public string Abbrev { get; set; }
         [JsonProperty("name")] public string Name { get; set; }
         [JsonProperty("displayName")] public string DisplayName { get; set; }
-        [JsonProperty("minPerEntry")] public int? MinPerEntry { get; set; }
-        [JsonProperty("maxPerEntry")] public int? MaxPerEntry { get; set; }
+        [JsonProperty("minPerEntry")] public int MinPerEntry { get; set; }
+        [JsonProperty("maxPerEntry")] public int MaxPerEntry { get; set; }
         [JsonProperty("approved")] public bool Approved { get; set; }
         [JsonProperty("slug")] public string Slug { get; set; }
         [JsonProperty("isCardGame")] public object IsCardGame { get; set; }

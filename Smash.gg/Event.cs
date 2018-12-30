@@ -59,7 +59,7 @@ namespace Smash.gg
         [JsonProperty("stations")]  public List<object> Stations { get; set; }
         [JsonProperty("streams")]  public List<object> Streams { get; set; }
         [JsonProperty("waves")]  public List<object> Waves { get; set; }
-        [JsonProperty("publishing")]  public Publishing Publishing { get; set; }
+        [JsonProperty("publishing")]  public List<object> Publishing { get; set; }
         [JsonProperty("images")]  public List<object> Images { get; set; }
         [JsonProperty("scheduleId")]  public int ScheduleId { get; set; }
         [JsonProperty("platform")]  public object Platform { get; set; }
