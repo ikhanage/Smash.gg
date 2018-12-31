@@ -5,7 +5,7 @@ namespace Smash.gg
 {
     public class Set
     {
-        [JsonProperty("id")]  public int Id { get; set; }
+        [JsonProperty("id")]  public string Id { get; set; }
         [JsonProperty("eventId")]  public int EventId { get; set; }
         [JsonProperty("phaseGroupId")]  public int PhaseGroupId { get; set; }
         [JsonProperty("stationId")]  public object StationId { get; set; }
@@ -16,10 +16,10 @@ namespace Smash.gg
         [JsonProperty("loserId")]  public int? LoserId { get; set; }
         [JsonProperty("bracketId")]  public string BracketId { get; set; }
         [JsonProperty("entrant1PrereqType")]  public string Entrant1PrereqType { get; set; }
-        [JsonProperty("entrant1PrereqId")]  public int? Entrant1PrereqId { get; set; }
+        [JsonProperty("entrant1PrereqId")]  public string Entrant1PrereqId { get; set; }
         [JsonProperty("entrant1PrereqCondition")]  public object Entrant1PrereqCondition { get; set; }
         [JsonProperty("entrant2PrereqType")]  public string Entrant2PrereqType { get; set; }
-        [JsonProperty("entrant2PrereqId")]  public int? Entrant2PrereqId { get; set; }
+        [JsonProperty("entrant2PrereqId")]  public string Entrant2PrereqId { get; set; }
         [JsonProperty("entrant2PrereqCondition")]  public object Entrant2PrereqCondition { get; set; }
         [JsonProperty("wProgressionSeedId")]  public object WProgressionSeedId { get; set; }
         [JsonProperty("lProgressionSeedId")]  public object LProgressionSeedId { get; set; }
@@ -58,7 +58,7 @@ namespace Smash.gg
         [JsonProperty("durationSeconds")]  public object DurationSeconds { get; set; }
         [JsonProperty("createdAt")]  public int CreatedAt { get; set; }
         [JsonProperty("updatedAt")]  public int UpdatedAt { get; set; }
-        [JsonProperty("updatedAtMicro")]  public double UpdatedAtMicro { get; set; }
+        [JsonProperty("updatedAtMicro")]  public double? UpdatedAtMicro { get; set; }
         [JsonProperty("startAt")]  public object StartAt { get; set; }
         [JsonProperty("startedAt")]  public object StartedAt { get; set; }
         [JsonProperty("completedAt")]  public long? CompletedAt { get; set; }
